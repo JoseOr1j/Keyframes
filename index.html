@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div 
+        {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation: mymove 5s infinite;
+            /* non stop */
+        }
+
+        @keyframes mymove
+        {
+            0% {top: 0px; left: 0px; background: red;}
+            25%{top: 200px; right: 100px; background: blue;}
+            50%{top: 100px; left: 100px; background: yellow;}
+            75%{top: 200x; left: 0px; background: green;}
+            100%{top: 0px; left: 0px; background: aqua;}
+            from{top: 0px;}
+            50%{top: 100px !important;} /*ignored*/
+            to {to: 200px;}
+        }
+        
+        p
+        {
+            animation-duration: 3s;
+            animation-name: slidein;    
+        }
+        @keyframes slidein
+        {
+            from
+            {
+                margin-left: 0%;
+                width: 100%;
+            }
+        to
+        {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+
+    </style>
+</head>
+<body>
+
+    <h1>
+        The keyframe rules 
+    </h1>
+    <p> SLIDE </p>
+<div>
+</div>
+    
+</body>
+</html>
